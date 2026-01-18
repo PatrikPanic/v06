@@ -14,3 +14,4 @@ int main() {
 	}
 	std::cout << total << '\n';
 }
+//
