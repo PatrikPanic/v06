@@ -1,8 +1,9 @@
 #include "pch.h"  
 #include "CppUnitTest.h"
-#include "..\\app\money.h"
+#include "../app/money.h"
 #include <sstream>
 #include <string>
+#include "../app/money.cpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace vsite::oop::v7;
