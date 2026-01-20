@@ -29,11 +29,15 @@ namespace vsite::oop::v7 {
 		int eur = m.cents / 100;
 		int ct = std::abs(m.cents % 100);
 
-		out << eur << " eur "
-			<< std::setw(2) << std::setfill('0') << ct << " ct";
+		out << eur << " eur";
+
+		if (ct != 0) {
+			out << " "
+				<< std::setw(2) << std::setfill('0') << ct
+				<< " ct";
+		}
 
 		return out;
 	}
 
 }
-//

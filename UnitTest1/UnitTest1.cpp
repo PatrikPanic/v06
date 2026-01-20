@@ -1,9 +1,7 @@
-#include "pch.h"  
 #include "CppUnitTest.h"
 #include "../app/money.h"
 #include <sstream>
 #include <string>
-#include "../app/money.cpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace vsite::oop::v7;
@@ -68,7 +66,7 @@ namespace UnitTest1
 
 			std::stringstream ss2;
 			ss2 << m3;
-			Assert::IsTrue(ss2.str() == "0 eur 00 ct");
+			Assert::IsTrue(ss2.str() == "0 eur");
 
 			money m5(-1, -10);
 			money m6(1, 10);
